@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bookz info</h1>
+    {% for book in book_list %}
+    <ul>
+        <li>title:{{book.title}}</li>
+        <li>author:{{book.author}}</li>
+        <li>pages:{{book.pages}}</li>
+    </ul>
+    <hr>
+    {% endfor %}
+</body>
+</html>
