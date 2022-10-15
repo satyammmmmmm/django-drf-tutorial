@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %} 
+
+{% block body_block %}
+<h1>company insert</h1>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="sybmit" name="" value="ins/upd">
+</form>
+
+{% endblock%}

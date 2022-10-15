@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %} 
+
+{% block body_block %}
+<h1>{{company.name}}info</h1>
+<ol>
+    <li>{{company.name}}</li>
+    <li>{{company.location}}</li>
+    <li>{{company.ceo}}</li>
+</ol>
+{% endblock %}
