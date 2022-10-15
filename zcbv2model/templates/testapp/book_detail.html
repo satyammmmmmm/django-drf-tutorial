@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>bookz info</h1>
-    <ol>
-        {% for book in books %}
-        <li><a href="/{{book.id}}">{{book.title}}</a></li>
-        {% endfor %}
-    </ol>
-    <a href="/create">insert new record</a>
-  
+    <h1>book info</h1>
+    
+    <ul>
+        <li>{{book.title}}</li>
+        <li>{{book.author}}</li>
+        <li>{{book.pages}}</li>
+    </ul>
+    
+</body>
 </html>

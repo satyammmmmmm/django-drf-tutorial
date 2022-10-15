@@ -17,7 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from testapp import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list/',views.Booklist.as_view()),
-]
+    path('list/',views.Booklist.as_view(),name='list'),
+    path('<int:pk>/',views.DetailView.as_view()),
+    path('create/',views.BookCreateView.as_view()),
+    path('update/<int:pk>',views.BookUpdateView.as_view())
+]   
